@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/SPLcorona.dir/main.cpp.o CMakeFiles/SPLcorona.dir/Tree.cpp.o CMakeFiles/SPLcorona.dir/Graph.cpp.o  -o SPLcorona 

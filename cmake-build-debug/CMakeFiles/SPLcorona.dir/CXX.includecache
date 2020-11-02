@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/spl211/CLionProjects/SPLcorona2/Graph.h
+vector
+-
+
+/home/spl211/CLionProjects/SPLcorona2/Session.h
+vector
+-
+string
+-
+Graph.h
+/home/spl211/CLionProjects/SPLcorona2/Graph.h
+
+/home/spl211/CLionProjects/SPLcorona2/Tree.cpp
+
+/home/spl211/CLionProjects/SPLcorona2/main.cpp
+iostream
+-
+Session.h
+/home/spl211/CLionProjects/SPLcorona2/Session.h
+
