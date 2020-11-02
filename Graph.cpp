@@ -9,6 +9,8 @@ Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){
     trafficLight = new vector<int>;
     for (int i = 0; i < matrix.size(); ++i) {
         trafficLight->push_back(0);
+
+
     }
 
 
