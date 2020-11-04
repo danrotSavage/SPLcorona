@@ -4,7 +4,7 @@
 
 using namespace std;
 #include "Graph.h"
-Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){
+Graph::Graph(std::vector<std::vector<int>> matrix):edges( matrix){//matrix on the heap or stack
 
     trafficLight = new vector<int>;
     for (int i = 0; i < matrix.size(); ++i) {
@@ -12,10 +12,15 @@ Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){
 
 
     }
-
-
-
 }
+
+Graph::Graph():edges(std::vector<std::vector<int>>) {}
+
+std::vector<int> Graph::getNeighbor(int vertices) {
+    return edges[vertices];
+}
+
+
 
 void Graph::infectNode(int nodeInd) {
     if ((*trafficLight)[nodeInd] == 0)

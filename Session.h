@@ -15,7 +15,7 @@ enum TreeType{
 
 class Session{
 public:
-    Session(const std::string& path);
+    Session(const std::string& path):g();
     
     void simulate();
     void addAgent(const Agent& agent);
@@ -29,7 +29,7 @@ private:
     Graph g;
     TreeType treeType;
     std::vector<Agent*> agents;
-    //a
+
 };
 
 #endif

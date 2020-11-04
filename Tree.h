@@ -14,9 +14,13 @@ public:
 
     static Tree* createTree(const Session& session, int rootLabel);
     virtual int traceTree()=0;
-private:
+
+protected:
     int node;
     std::vector<Tree*> children;
+    std::vector<int> usedVertices;
+private:
+    std::vector<int> getReleventChildren(std::vector<int>& GraphNeighbor);
 };
 
 class CycleTree: public Tree{
